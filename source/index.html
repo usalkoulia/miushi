@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Демо-страница</title>
+    <title>Миюши</title>
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
@@ -10,13 +10,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div style="display: none">
-      <include src="build/img/sprite.svg"></include>
-    </div>
-    <main>
-      main
+
+    <header class="header">
+      <div class="header__centering">
+        <div class="header__wrapper">
+          <button class="header__button" type="button"></button>
+          <a class="header__logo" href="#main" aria-label="Перейти к основному контенту">
+            <img src="img/logo-main.png" alt="Логотип ресторана Миюши">
+          </a>
+          <div class="header__user-menu user-menu">
+            <ul class="user-menu__list">
+              <li class="user-menu__item">Кабинет</li>
+              <li class="user-menu__item">Корзина</li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__navigation-wrapper">
+          <nav class="header__navigation navigation" role="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#menu">Меню</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#sale">Акции и скидки</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#shop">Доставка и оплата</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#news">Новости</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#contact">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__menu-wrapper">
+            <a href="tel:+78003332222">+7 (800) 333 2 222</a>
+            <span>Работаем с 11.00 до 23.00</span>
+            <button type="button">Обратный звонок</button>
+            <p> г. Курск, ул. Ленина, д. 3</p>
+            <a href="mailto:78003332222@yandex.ru">78003332222@yandex.ru</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <h1 class="visually-hidden">Основное содержание</h1>
+
+      <section class="sale">
+        <div class="sale__list">
+          <div class="sale__item">
+            <h2 class="sale__title">Счатливые часы</h2>
+            <p class="sale__text">С 11:00 до 16:00 в будние дни</p>
+            <a class="sale__link" href="#">Подробнее</a>
+          </div>
+          <div class="sale__item">
+            <h2 class="sale__title">Счатливые часы</h2>
+            <p class="sale__text">С 11:00 до 16:00 в будние дни</p>
+            <a class="sale__link" href="#">Подробнее</a>
+          </div>
+          <div class="sale__item">
+            <h2 class="sale__title">Счатливые часы</h2>
+            <p class="sale__text">С 11:00 до 16:00 в будние дни</p>
+            <a class="sale__link" href="#">Подробнее</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu">
+        <div class="sets">
+
+        </div>
+      </section>
     </main>
-    <include src="source/_footer.html"></include>
     <script src="js/main.js"></script>
   </body>
 </html>

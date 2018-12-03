@@ -4,6 +4,10 @@
 @import "centering";
 @import "visually-hidden";
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -15,4 +19,8 @@ img {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.title {
+  font-family: "Lemon Tuesday", fantasy;
 }

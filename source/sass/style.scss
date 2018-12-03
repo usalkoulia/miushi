@@ -5,7 +5,9 @@
 @import "visually-hidden";
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", arial, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 img {
@@ -22,5 +24,7 @@ img {
 }
 
 .title {
-  font-family: "Lemon Tuesday", fantasy;
+  font-family: $third-font;
+  font-weight: 400;
+  font-style: normal;
 }

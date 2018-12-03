@@ -6,6 +6,7 @@
     <link rel="preload" href="fonts/lemon_tuesday-webfont.woff2" as="font">
     <link rel="preload" href="fonts/lemon_tuesday-webfont.woff2" as="font">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +16,23 @@
     <header class="header">
       <div class="header__centering">
         <div class="header__wrapper">
-          <button class="header__button" type="button"></button>
-          <a class="header__logo" href="#main" aria-label="Перейти к основному контенту">
-            <img src="img/logo-mobile.png" width="92" height="92" alt="Логотип ресторана Миюши">
-          </a>
+          <button class="header__button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+          </button>
+          <!-- <a class="header__logo" href="#main" aria-label="Перейти к основному контенту">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img class="example__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот после диеты Cat Energy">
+            </picture>
+          </a> -->
           <div class="header__user-menu user-menu">
             <ul class="user-menu__list">
               <li class="user-menu__item">Кабинет</li>
@@ -27,6 +41,12 @@
           </div>
         </div>
         <div class="header__navigation-wrapper">
+          <button type="button" name="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          </button>
           <nav class="header__navigation navigation" role="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
@@ -435,7 +455,12 @@
           <span>Есть вопросы?</span>
           <h2 class="feedback__title">Оставьте свои контакты</h2>
           <form class="feedback__form" action="index.html" method="post">
-
+            <label class="visually-hidden" for="comment">Введите имя</label>
+            <input class="feedback__input" type="text" name="comment" id="comment">
+            <label class="visually-hidden" for="telephone">Введите адрес электронной почты</label>
+            <input class="feedback__input" type="tel" name="telephone" id="telephone">
+            <button class="feedback__button" type="submit" name="button">Отправить</button>
+            <p class="feedback__text">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</p>
           </form>
         </div>
 

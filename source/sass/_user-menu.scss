@@ -1,0 +1,19 @@
+.user-menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.user-menu__button {
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+
+  &--cabinet {
+    background-image: url("../img/icon-user@1x.png");
+  }
+
+  &--basket {
+    background-image: url("../img/icon-basket@1x.png");
+  }
+}

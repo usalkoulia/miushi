@@ -1,0 +1,70 @@
+.sale {
+  min-height: 300px;
+}
+
+.sale__item {
+  min-height: 240px;
+  background-image: url("../img/sale-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 30px 15px;
+
+  &:nth-child(2) {
+    display: none;
+  }
+
+  &:nth-child(3) {
+    display: none;
+  }
+}
+
+.sale__wrapper {
+  position: relative;
+  max-width: 500px;
+
+  &::after{
+    content: "скидка 15%";
+    position: absolute;
+    top: calc(50% - 20px);
+    left: 75%;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #de2024 0%,#b81f24 100%);
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.sale__title {
+  font-size: 49px;
+  text-align: left;
+  line-height: 60px;
+  letter-spacing: 1px;
+  color: $primary-color;
+  margin-bottom: 20px;
+}
+
+.sale__text {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.sale__link {
+  display: none;
+}
+
+.sale__button {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #c2c2c2;
+  // background-color: transparent;
+  background-color: red;
+}

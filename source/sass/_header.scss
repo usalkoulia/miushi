@@ -1,0 +1,45 @@
+.header {
+  min-height: 56px;
+  border: 1px solid red;
+}
+
+.header__centering {
+  padding: 0 15px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: inline-block;
+}
+
+.header__logo-image {
+  vertical-align: top;
+}
+
+.header__toggle {
+  background: none;
+  border: 0;
+  padding: 0;
+  vertical-align: top;
+  cursor: pointer;
+
+  svg {
+    vertical-align: top;
+    fill: $primary-color;
+  }
+}
+
+.header__icon {
+  &--close {
+    display: none;
+  }
+}
+
+.header__navigation-wrapper {
+  display: none;
+}

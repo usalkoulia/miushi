@@ -16,37 +16,37 @@
     <header class="header">
       <div class="header__centering">
         <div class="header__wrapper">
-          <button class="header__button" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <button class="header__toggle" type="button">
+            <svg class="header__icon header__icon--open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path d="M0 0h24v24H0z" fill="none"/>
               <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
             </svg>
-          </button>
-          <!-- <a class="header__logo" href="#main" aria-label="Перейти к основному контенту">
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img class="example__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот после диеты Cat Energy">
-            </picture>
-          </a> -->
-          <div class="header__user-menu user-menu">
-            <ul class="user-menu__list">
-              <li class="user-menu__item">Кабинет</li>
-              <li class="user-menu__item">Корзина</li>
-            </ul>
-          </div>
-        </div>
-        <div class="header__navigation-wrapper">
-          <button type="button" name="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <svg class="header__icon header__icon--close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
               <path d="M0 0h24v24H0z" fill="none"/>
             </svg>
           </button>
+          <a class="header__logo" href="#main" aria-label="Перейти к основному контенту">
+            <picture>
+              <source type="image/webp" media="(min-width: 765px)" srcset="img/logo-desktop@1x.webp 1x, img/logo-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-mobile@1x.webp 1x, img/logo-mobile@2x.webp 2x">
+
+              <source media="(min-width: 765px)" srcset="img/logo-desktop@1x.png 1x, img/logo-desktop@2x.png 2x">
+              <img class="header__logo-image" src="img/logo-mobile@1x.png" srcset="img/logo-mobile@2x.png 2x" width="55" height="52" alt="Логотип ресторана Миюши">
+            </picture>
+          </a>
+          <div class="header__user-menu user-menu">
+            <ul class="user-menu__list">
+              <li class="user-menu__item">
+                <button class="user-menu__button user-menu__button--cabinet" type="button" name="button">Кабинет пользователя</button>
+              </li>
+              <li class="user-menu__item">
+                <button class="user-menu__button user-menu__button--basket" type="button" name="button">Корзина</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__navigation-wrapper">
           <nav class="header__navigation navigation" role="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
@@ -80,27 +80,38 @@
     <main id="main">
 
       <section class="sale">
-        <h2>Акции и выгодные предложения ресторана Миюши</h2>
+        <h2 class="visually-hidden">Акции и выгодные предложения ресторана Миюши</h2>
         <div class="sale__list">
           <div class="sale__item">
-            <h3 class="sale__title">Счастливые часы</h3>
-            <p class="sale__text">С 11:00 до 16:00 в будние дни</p>
-            <a class="sale__link" href="#">Подробнее</a>
+            <div class="sale__wrapper">
+              <h3 class="sale__title title">Счастливые<br>часы</h3>
+              <p class="sale__text">С 11:00 до 16:00 в будние дни</p>
+              <a class="sale__link" href="#">Подробнее</a>
+            </div>
           </div>
           <div class="sale__item">
-            <h3 class="sale__title">Счастливые часы</h3>
-            <p class="sale__text">С 11:00 до 16:00 в будние дни</p>
-            <a class="sale__link" href="#">Подробнее</a>
+            <div class="sale__wrapper">
+              <h3 class="sale__title title">Счастливые<br>часы</h3>
+              <p class="sale__text">С 11:00 до 16:00 в будние дни</p>
+              <a class="sale__link" href="#">Подробнее</a>
+            </div>
           </div>
           <div class="sale__item">
-            <h3 class="sale__title">Счастливые часы</h3>
-            <p class="sale__text">С 11:00 до 16:00 в будние дни</p>
-            <a class="sale__link" href="#">Подробнее</a>
+            <div class="sale__wrapper">
+              <h3 class="sale__title title">Счастливые<br>часы</h3>
+              <p class="sale__text">С 11:00 до 16:00 в будние дни</p>
+              <a class="sale__link" href="#">Подробнее</a>
+            </div>
           </div>
+        </div>
+        <div class="sale__buttons">
+          <button class="sale__buttons" type="button"></button>
+          <button class="sale__buttons" type="button"></button>
+          <button class="sale__buttons" type="button"></button>
         </div>
       </section>
 
-      <h1>Меню ресторана Миюши</h1>
+      <h1 class="visually-hidden">Меню ресторана Миюши</h1>
 
       <section class="menu menu--sets">
         <div class="menu__centering">
@@ -188,7 +199,7 @@
 
       <section class="menu menu--rolls">
         <div class="menu__centering">
-        <h2>Роллы</h2>
+        <h2 class="title">Роллы</h2>
           <ul class="menu__list">
             <li class="menu__item item">
               <img class="item__image" src="" alt="">
@@ -272,7 +283,7 @@
 
       <section class="menu menu--pizza">
         <div class="menu__centering">
-        <h2>Пицца</h2>
+        <h2 class="title">Пицца</h2>
           <ul class="menu__list">
             <li class="menu__item item">
               <img class="item__image" src="" alt="">
@@ -356,7 +367,7 @@
 
       <section class="menu menu--wok">
         <div class="menu__centering">
-        <h2>Wok</h2>
+        <h2 class="title">Wok</h2>
           <ul class="menu__list">
             <li class="menu__item item">
               <img class="item__image" src="" alt="">
@@ -383,7 +394,7 @@
 
       <section class="reasons">
         <div class="reasons__centering">
-          <h2 class="reasons__title">10 причин купить у нас</h2>
+          <h2 class="reasons__title title">10 причин купить у нас</h2>
           <ul class="reasons__list">
             <li class="reasons__item">100% ручная работа</li>
             <li class="reasons__item">100% ручная работа</li>
@@ -402,7 +413,7 @@
 
       <section class="reviews">
         <div class="reviews__centering">
-          <h2>Отзывы</h2>
+          <h2 class="title">Отзывы</h2>
             <ul class="reviews__list">
               <li class="reviews__item">
                 <img class="reviews__avatar" src="" alt="">
@@ -453,7 +464,7 @@
       <section class="feedback">
         <div class="feedback__centering">
           <span>Есть вопросы?</span>
-          <h2 class="feedback__title">Оставьте свои контакты</h2>
+          <h2 class="feedback__title title">Оставьте свои контакты</h2>
           <form class="feedback__form" action="index.html" method="post">
             <label class="visually-hidden" for="comment">Введите имя</label>
             <input class="feedback__input" type="text" name="comment" id="comment">
@@ -468,7 +479,7 @@
 
       <section class="about">
         <div class="about__centering">
-          <h2 class="about__title">О компании</h2>
+          <h2 class="about__title title">О компании</h2>
           <h3 class="about__title about__title--small">Заказ и доставка роллов, пиццы и WOK(Вок) в городе Курск</h3>
           <p class="about__text">Суши МИЮШИ открылись в октябре 2012г. и уже завоевали успех у тех, кто ценит японскую кухню и качественное приготовление блюд.</p>
           <p class="about__text">С 2013 года мы осуществляем не только доставку на дом, теперь для вас открыт наш уютный небольшой зал. Придя сюда, вы сможете плотно пообедать, насладиться прекрасными напитками, посидеть с друзьями или обзавестись новыми знакомствами.</p>

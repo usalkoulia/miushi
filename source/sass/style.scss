@@ -4,13 +4,20 @@
 @import "centering";
 @import "visually-hidden";
 @import "title";
+@import "button";
 @import "header";
 @import "user-menu";
 @import "sale";
+@import "menu";
+@import "item";
+@import "reasons";
+@import "about";
 
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
+  font-size: 14px;
+  line-height: 20px;
   background-color: #ffffff;
 }
 

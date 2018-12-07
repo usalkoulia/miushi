@@ -1,0 +1,73 @@
+.item {
+  display: none;
+  width: 227px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+
+  &:first-child {
+    display: block;
+  }
+}
+
+.item__image {
+  width: 228px;
+  height: 217px;
+  margin-bottom: 15px;
+}
+
+.item__wrapper {
+  padding: 0 15px;
+}
+
+.item__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.item__data {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.item__form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.item__price {
+  font-family: $secondary-font;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.item__button {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #838383;
+  border-radius: 50%;
+  background: transparent;
+  color: #808080;
+  text-align: center;
+  line-height: 2px;
+}
+
+.item__input {
+  width: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.item__submit-button {
+  background-image: url("../img/icon-basket@1x.png");
+  background-repeat: no-repeat;
+  background-position: 145px center;
+  text-align: left;
+  padding-left: 30px;
+  margin-bottom: 34px;
+}

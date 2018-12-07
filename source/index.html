@@ -5,7 +5,7 @@
     <title>Миюши</title>
     <link rel="preload" href="fonts/lemon_tuesday-webfont.woff2" as="font">
     <link rel="preload" href="fonts/lemon_tuesday-webfont.woff2" as="font">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
@@ -105,9 +105,9 @@
           </div>
         </div>
         <div class="sale__buttons">
-          <button class="sale__buttons" type="button"></button>
-          <button class="sale__buttons" type="button"></button>
-          <button class="sale__buttons" type="button"></button>
+          <button class="sale__button sale__button--active" type="button"></button>
+          <button class="sale__button" type="button"></button>
+          <button class="sale__button" type="button"></button>
         </div>
       </section>
 
@@ -115,83 +115,94 @@
 
       <section class="menu menu--sets">
         <div class="menu__centering">
-        <h2 class="title">Сеты</h2>
+        <h2 class="menu__title title title--decoration">Сеты</h2>
           <ul class="menu__list">
             <li class="menu__item item">
-              <img class="item__image" src="" alt="">
-              <h4 class="item__title">Сет №8</h4>
-              <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
-              <p class="item__price">1 550 руб.</p>
-              <form class="item__form" action="index.html" method="post">
-                <div class="item__amount">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Больше на одну</span>-
-                  </button>
-                  <label class="visually-hidden" for="amount-sets-8">Количество порций</label>
-                  <input class="item__input" type="number" value="1" id="amount-sets-8">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Меньше на одну</span>+
-                  </button>
-                </div>
-                <button class="item__submit-button" type="submit" name="button">В корзину</button>
-              </form>
+              <picture>
+                <source type="image/webp" media="(min-width: 765px)" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+                <source type="image/webp" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+
+                <source media="(min-width: 765px)" srcset="img/lset-laptop2@1x.png 1x, img/set-laptop2@2x.png 2x">
+                <img class="item__image" src="img/set-laptop2@1x.png" srcset="img/set-laptop2@2x.png 2x" width="263" height="228" alt="Сет №8">
+              </picture>
+              <div class="item__wrapper">
+                <h4 class="item__title">Сет №8</h4>
+                <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
+                <form class="item__form" action="index.html" method="post">
+                  <div class="item__form-wrapper">
+                    <p class="item__price">1 550 <sup>руб.</sup></p>
+                    <div class="item__amount">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Больше на одну</span>-
+                      </button>
+                      <label class="visually-hidden" for="amount-sets-8">Количество порций</label>
+                      <input class="item__input" type="number" value="1" id="amount-sets-8">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Меньше на одну</span>+
+                      </button>
+                    </div>
+                  </div>
+                  <button class="item__submit-button button button--opaque" type="submit" name="button">В корзину</button>
+                </form>
+              </div>
             </li>
             <li class="menu__item item">
-              <img class="item__image" src="" alt="">
-              <h4 class="item__title">Сет №10</h4>
-              <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
-              <p class="item__price">1 550 руб.</p>
-              <form class="item__form" action="index.html" method="post">
-                <div class="item__amount">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Больше на одну</span>-
-                  </button>
-                  <label class="visually-hidden" for="amount-sets-10">Количество порций</label>
-                  <input class="item__input" type="number" value="1" id="amount-sets-10">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Меньше на одну</span>+
-                  </button>
-                </div>
-                <button class="item__submit-button" type="submit" name="button">В корзину</button>
-              </form>
+              <picture>
+                <source type="image/webp" media="(min-width: 765px)" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+                <source type="image/webp" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+
+                <source media="(min-width: 765px)" srcset="img/lset-laptop2@1x.png 1x, img/set-laptop2@2x.png 2x">
+                <img class="item__image" src="img/set-laptop2@1x.png" srcset="img/set-laptop2@2x.png 2x" width="263" height="228" alt="Сет №8">
+              </picture>
+              <div class="item__wrapper">
+                <h4 class="item__title">Сет №10</h4>
+                <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
+                <form class="item__form" action="index.html" method="post">
+                  <div class="item__form-wrapper">
+                    <p class="item__price">1 550 <sup>руб.</sup></p>
+                    <div class="item__amount">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Больше на одну</span>-
+                      </button>
+                      <label class="visually-hidden" for="amount-sets-8">Количество порций</label>
+                      <input class="item__input" type="number" value="1" id="amount-sets-8">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Меньше на одну</span>+
+                      </button>
+                    </div>
+                  </div>
+                  <button class="item__submit-button button button--opaque" type="submit" name="button">В корзину</button>
+                </form>
+              </div>
             </li>
             <li class="menu__item item">
-              <img class="item__image" src="" alt="">
-              <h4 class="item__title">Минисет №5</h4>
-              <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
-              <p class="item__price">1 550 руб.</p>
-              <form class="item__form" action="index.html" method="post">
-                <div class="item__amount">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Больше на одну</span>-
-                  </button>
-                  <label class="visually-hidden" for="amount-sets-8">Количество порций</label>
-                  <input class="item__input" type="number" value="1" id="amount-sets-5">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Меньше на одну</span>+
-                  </button>
-                </div>
-                <button class="item__submit-button" type="submit" name="button">В корзину</button>
-              </form>
-            </li>
-            <li class="menu__item item">
-              <img class="item__image" src="" alt="">
-              <h4 class="item__title">Сет №6</h4>
-              <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
-              <p class="item__price">1 550 руб.</p>
-              <form class="item__form" action="index.html" method="post">
-                <div class="item__amount">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Больше на одну</span>-
-                  </button>
-                  <label class="visually-hidden" for="amount-sets-6">Количество порций</label>
-                  <input class="item__input" type="number" value="1" id="amount-sets-6">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Меньше на одну</span>+
-                  </button>
-                </div>
-                <button class="item__submit-button" type="submit" name="button">В корзину</button>
-              </form>
+              <picture>
+                <source type="image/webp" media="(min-width: 765px)" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+                <source type="image/webp" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+
+                <source media="(min-width: 765px)" srcset="img/lset-laptop2@1x.png 1x, img/set-laptop2@2x.png 2x">
+                <img class="item__image" src="img/set-laptop2@1x.png" srcset="img/set-laptop2@2x.png 2x" width="263" height="228" alt="Сет №8">
+              </picture>
+              <div class="item__wrapper">
+                <h4 class="item__title">Сет №8</h4>
+                <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
+                <form class="item__form" action="index.html" method="post">
+                  <div class="item__form-wrapper">
+                    <p class="item__price">1 550 <sup>руб.</sup></p>
+                    <div class="item__amount">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Больше на одну</span>-
+                      </button>
+                      <label class="visually-hidden" for="amount-sets-8">Количество порций</label>
+                      <input class="item__input" type="number" value="1" id="amount-sets-8">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Меньше на одну</span>+
+                      </button>
+                    </div>
+                  </div>
+                  <button class="item__submit-button button button--opaque" type="submit" name="button">В корзину</button>
+                </form>
+              </div>
             </li>
           </ul>
         </div>
@@ -199,83 +210,94 @@
 
       <section class="menu menu--rolls">
         <div class="menu__centering">
-        <h2 class="title">Роллы</h2>
+        <h2 class="menu__title title title--decoration">Роллы</h2>
           <ul class="menu__list">
             <li class="menu__item item">
-              <img class="item__image" src="" alt="">
-              <h4 class="item__title">Кунсей батакон</h4>
-              <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
-              <p class="item__price">1 550 руб.</p>
-              <form class="item__form" action="index.html" method="post">
-                <div class="item__amount">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Больше на одну</span>-
-                  </button>
-                  <label class="visually-hidden" for="amount-rolls-batakon">Количество порций</label>
-                  <input class="item__input" type="number" value="1" id="amount-rolls-batakon">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Меньше на одну</span>+
-                  </button>
-                </div>
-                <button class="item__submit-button" type="submit" name="button">В корзину</button>
-              </form>
+              <picture>
+                <source type="image/webp" media="(min-width: 765px)" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+                <source type="image/webp" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+
+                <source media="(min-width: 765px)" srcset="img/lset-laptop2@1x.png 1x, img/set-laptop2@2x.png 2x">
+                <img class="item__image" src="img/set-laptop2@1x.png" srcset="img/set-laptop2@2x.png 2x" width="263" height="228" alt="Сет №8">
+              </picture>
+              <div class="item__wrapper">
+                <h4 class="item__title">Сет №8</h4>
+                <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
+                <form class="item__form" action="index.html" method="post">
+                  <div class="item__form-wrapper">
+                    <p class="item__price">1 550 <sup>руб.</sup></p>
+                    <div class="item__amount">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Больше на одну</span>-
+                      </button>
+                      <label class="visually-hidden" for="amount-sets-8">Количество порций</label>
+                      <input class="item__input" type="number" value="1" id="amount-sets-8">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Меньше на одну</span>+
+                      </button>
+                    </div>
+                  </div>
+                  <button class="item__submit-button button button--opaque" type="submit" name="button">В корзину</button>
+                </form>
+              </div>
             </li>
             <li class="menu__item item">
-              <img class="item__image" src="" alt="">
-              <h4 class="item__title">Унаги диру</h4>
-              <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
-              <p class="item__price">1 550 руб.</p>
-              <form class="item__form" action="index.html" method="post">
-                <div class="item__amount">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Больше на одну</span>-
-                  </button>
-                  <label class="visually-hidden" for="amount-rolls-diru">Количество порций</label>
-                  <input class="item__input" type="number" value="1" id="amount-rolls-diru">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Меньше на одну</span>+
-                  </button>
-                </div>
-                <button class="item__submit-button" type="submit" name="button">В корзину</button>
-              </form>
+              <picture>
+                <source type="image/webp" media="(min-width: 765px)" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+                <source type="image/webp" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+
+                <source media="(min-width: 765px)" srcset="img/lset-laptop2@1x.png 1x, img/set-laptop2@2x.png 2x">
+                <img class="item__image" src="img/set-laptop2@1x.png" srcset="img/set-laptop2@2x.png 2x" width="263" height="228" alt="Сет №8">
+              </picture>
+              <div class="item__wrapper">
+                <h4 class="item__title">Сет №8</h4>
+                <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
+                <form class="item__form" action="index.html" method="post">
+                  <div class="item__form-wrapper">
+                    <p class="item__price">1 550 <sup>руб.</sup></p>
+                    <div class="item__amount">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Больше на одну</span>-
+                      </button>
+                      <label class="visually-hidden" for="amount-sets-8">Количество порций</label>
+                      <input class="item__input" type="number" value="1" id="amount-sets-8">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Меньше на одну</span>+
+                      </button>
+                    </div>
+                  </div>
+                  <button class="item__submit-button button button--opaque" type="submit" name="button">В корзину</button>
+                </form>
+              </div>
             </li>
             <li class="menu__item item">
-              <img class="item__image" src="" alt="">
-              <h4 class="item__title">Филадельфия</h4>
-              <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
-              <p class="item__price">1 550 руб.</p>
-              <form class="item__form" action="index.html" method="post">
-                <div class="item__amount">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Больше на одну</span>-
-                  </button>
-                  <label class="visually-hidden" for="amount-rolls-filadelfia">Количество порций</label>
-                  <input class="item__input" type="number" value="1" id="amount-rolls-filadelfia">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Меньше на одну</span>+
-                  </button>
-                </div>
-                <button class="item__submit-button" type="submit" name="button">В корзину</button>
-              </form>
-            </li>
-            <li class="menu__item item">
-              <img class="item__image" src="" alt="">
-              <h4 class="item__title">Мексиканский</h4>
-              <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
-              <p class="item__price">1 550 руб.</p>
-              <form class="item__form" action="index.html" method="post">
-                <div class="item__amount">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Больше на одну</span>-
-                  </button>
-                  <label class="visually-hidden" for="amount-rolls-mexico">Количество порций</label>
-                  <input class="item__input" type="number" value="1" id="amount-rolls-mexico">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Меньше на одну</span>+
-                  </button>
-                </div>
-                <button class="item__submit-button" type="submit" name="button">В корзину</button>
-              </form>
+              <picture>
+                <source type="image/webp" media="(min-width: 765px)" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+                <source type="image/webp" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+
+                <source media="(min-width: 765px)" srcset="img/lset-laptop2@1x.png 1x, img/set-laptop2@2x.png 2x">
+                <img class="item__image" src="img/set-laptop2@1x.png" srcset="img/set-laptop2@2x.png 2x" width="263" height="228" alt="Сет №8">
+              </picture>
+              <div class="item__wrapper">
+                <h4 class="item__title">Сет №8</h4>
+                <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
+                <form class="item__form" action="index.html" method="post">
+                  <div class="item__form-wrapper">
+                    <p class="item__price">1 550 <sup>руб.</sup></p>
+                    <div class="item__amount">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Больше на одну</span>-
+                      </button>
+                      <label class="visually-hidden" for="amount-sets-8">Количество порций</label>
+                      <input class="item__input" type="number" value="1" id="amount-sets-8">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Меньше на одну</span>+
+                      </button>
+                    </div>
+                  </div>
+                  <button class="item__submit-button button button--opaque" type="submit" name="button">В корзину</button>
+                </form>
+              </div>
             </li>
           </ul>
         </div>
@@ -283,83 +305,94 @@
 
       <section class="menu menu--pizza">
         <div class="menu__centering">
-        <h2 class="title">Пицца</h2>
+        <h2 class="menu__title title title--decoration">Пицца</h2>
           <ul class="menu__list">
             <li class="menu__item item">
-              <img class="item__image" src="" alt="">
-              <h4 class="item__title">Баварская</h4>
-              <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
-              <p class="item__price">1 550 руб.</p>
-              <form class="item__form" action="index.html" method="post">
-                <div class="item__amount">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Больше на одну</span>-
-                  </button>
-                  <label class="visually-hidden" for="amount-pizza-bavarian">Количество порций</label>
-                  <input class="item__input" type="number" value="1" id="amount-pizza-bavarian">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Меньше на одну</span>+
-                  </button>
-                </div>
-                <button class="item__submit-button" type="submit" name="button">В корзину</button>
-              </form>
+              <picture>
+                <source type="image/webp" media="(min-width: 765px)" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+                <source type="image/webp" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+
+                <source media="(min-width: 765px)" srcset="img/lset-laptop2@1x.png 1x, img/set-laptop2@2x.png 2x">
+                <img class="item__image" src="img/set-laptop2@1x.png" srcset="img/set-laptop2@2x.png 2x" width="263" height="228" alt="Сет №8">
+              </picture>
+              <div class="item__wrapper">
+                <h4 class="item__title">Сет №8</h4>
+                <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
+                <form class="item__form" action="index.html" method="post">
+                  <div class="item__form-wrapper">
+                    <p class="item__price">1 550 <sup>руб.</sup></p>
+                    <div class="item__amount">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Больше на одну</span>-
+                      </button>
+                      <label class="visually-hidden" for="amount-sets-8">Количество порций</label>
+                      <input class="item__input" type="number" value="1" id="amount-sets-8">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Меньше на одну</span>+
+                      </button>
+                    </div>
+                  </div>
+                  <button class="item__submit-button button button--opaque" type="submit" name="button">В корзину</button>
+                </form>
+              </div>
             </li>
             <li class="menu__item item">
-              <img class="item__image" src="" alt="">
-              <h4 class="item__title">Вегетарианская</h4>
-              <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
-              <p class="item__price">1 550 руб.</p>
-              <form class="item__form" action="index.html" method="post">
-                <div class="item__amount">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Больше на одну</span>-
-                  </button>
-                  <label class="visually-hidden" for="amount-pizza-bavarian">Количество порций</label>
-                  <input class="item__input" type="number" value="1" id="amount-pizza-vegeterian">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Меньше на одну</span>+
-                  </button>
-                </div>
-                <button class="item__submit-button" type="submit" name="button">В корзину</button>
-              </form>
+              <picture>
+                <source type="image/webp" media="(min-width: 765px)" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+                <source type="image/webp" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+
+                <source media="(min-width: 765px)" srcset="img/lset-laptop2@1x.png 1x, img/set-laptop2@2x.png 2x">
+                <img class="item__image" src="img/set-laptop2@1x.png" srcset="img/set-laptop2@2x.png 2x" width="263" height="228" alt="Сет №8">
+              </picture>
+              <div class="item__wrapper">
+                <h4 class="item__title">Сет №8</h4>
+                <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
+                <form class="item__form" action="index.html" method="post">
+                  <div class="item__form-wrapper">
+                    <p class="item__price">1 550 <sup>руб.</sup></p>
+                    <div class="item__amount">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Больше на одну</span>-
+                      </button>
+                      <label class="visually-hidden" for="amount-sets-8">Количество порций</label>
+                      <input class="item__input" type="number" value="1" id="amount-sets-8">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Меньше на одну</span>+
+                      </button>
+                    </div>
+                  </div>
+                  <button class="item__submit-button button button--opaque" type="submit" name="button">В корзину</button>
+                </form>
+              </div>
             </li>
             <li class="menu__item item">
-              <img class="item__image" src="" alt="">
-              <h4 class="item__title">Пепперони</h4>
-              <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
-              <p class="item__price">1 550 руб.</p>
-              <form class="item__form" action="index.html" method="post">
-                <div class="item__amount">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Больше на одну</span>-
-                  </button>
-                  <label class="visually-hidden" for="amount-rolls-pepperoni">Количество порций</label>
-                  <input class="item__input" type="number" value="1" id="amount-pizza-pepperoni">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Меньше на одну</span>+
-                  </button>
-                </div>
-                <button class="item__submit-button" type="submit" name="button">В корзину</button>
-              </form>
-            </li>
-            <li class="menu__item item">
-              <img class="item__image" src="" alt="">
-              <h4 class="item__title">Классическая</h4>
-              <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
-              <p class="item__price">1 550 руб.</p>
-              <form class="item__form" action="index.html" method="post">
-                <div class="item__amount">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Больше на одну</span>-
-                  </button>
-                  <label class="visually-hidden" for="amount-pizza-classic">Количество порций</label>
-                  <input class="item__input" type="number" value="1" id="amount-pizza-classic">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Меньше на одну</span>+
-                  </button>
-                </div>
-                <button class="item__submit-button" type="submit" name="button">В корзину</button>
-              </form>
+              <picture>
+                <source type="image/webp" media="(min-width: 765px)" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+                <source type="image/webp" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+
+                <source media="(min-width: 765px)" srcset="img/lset-laptop2@1x.png 1x, img/set-laptop2@2x.png 2x">
+                <img class="item__image" src="img/set-laptop2@1x.png" srcset="img/set-laptop2@2x.png 2x" width="263" height="228" alt="Сет №8">
+              </picture>
+              <div class="item__wrapper">
+                <h4 class="item__title">Сет №8</h4>
+                <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
+                <form class="item__form" action="index.html" method="post">
+                  <div class="item__form-wrapper">
+                    <p class="item__price">1 550 <sup>руб.</sup></p>
+                    <div class="item__amount">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Больше на одну</span>-
+                      </button>
+                      <label class="visually-hidden" for="amount-sets-8">Количество порций</label>
+                      <input class="item__input" type="number" value="1" id="amount-sets-8">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Меньше на одну</span>+
+                      </button>
+                    </div>
+                  </div>
+                  <button class="item__submit-button button button--opaque" type="submit" name="button">В корзину</button>
+                </form>
+              </div>
             </li>
           </ul>
         </div>
@@ -367,26 +400,36 @@
 
       <section class="menu menu--wok">
         <div class="menu__centering">
-        <h2 class="title">Wok</h2>
+        <h2 class="menu__title title title--decoration">Wok</h2>
           <ul class="menu__list">
             <li class="menu__item item">
-              <img class="item__image" src="" alt="">
-              <h4 class="item__title">С говядиной</h4>
-              <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
-              <p class="item__price">1 550 руб.</p>
-              <form class="item__form" action="index.html" method="post">
-                <div class="item__amount">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Больше на одну</span>-
-                  </button>
-                  <label class="visually-hidden" for="amount-pizza-bavarian">Количество порций</label>
-                  <input class="item__input" type="number" value="1" id="amount-pizza-bavarian">
-                  <button class="item__button" type="button" name="button">
-                    <span class="visually-hidden">Меньше на одну</span>+
-                  </button>
-                </div>
-                <button class="item__submit-button" type="submit" name="button">В корзину</button>
-              </form>
+              <picture>
+                <source type="image/webp" media="(min-width: 765px)" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+                <source type="image/webp" srcset="img/set-laptop2@1x.webp 1x, img/set-laptop2@2x.webp 2x">
+
+                <source media="(min-width: 765px)" srcset="img/lset-laptop2@1x.png 1x, img/set-laptop2@2x.png 2x">
+                <img class="item__image" src="img/set-laptop2@1x.png" srcset="img/set-laptop2@2x.png 2x" width="263" height="228" alt="Сет №8">
+              </picture>
+              <div class="item__wrapper">
+                <h4 class="item__title">Сет №8</h4>
+                <p class="item__data">24 шт. | 960 г. | 800 Kkal</p>
+                <form class="item__form" action="index.html" method="post">
+                  <div class="item__form-wrapper">
+                    <p class="item__price">1 550 <sup>руб.</sup></p>
+                    <div class="item__amount">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Больше на одну</span>-
+                      </button>
+                      <label class="visually-hidden" for="amount-sets-8">Количество порций</label>
+                      <input class="item__input" type="number" value="1" id="amount-sets-8">
+                      <button class="item__button" type="button" name="button">
+                        <span class="visually-hidden">Меньше на одну</span>+
+                      </button>
+                    </div>
+                  </div>
+                  <button class="item__submit-button button button--opaque" type="submit" name="button">В корзину</button>
+                </form>
+              </div>
             </li>
           </ul>
         </div>
@@ -408,12 +451,13 @@
             <li class="reasons__item">100% ручная работа</li>
             <li class="reasons__item">100% ручная работа</li>
           </ul>
+          <button class="reasons__button button button--transparent" type="button">Показать все</button>
         </div>
       </section>
 
       <section class="reviews">
         <div class="reviews__centering">
-          <h2 class="title">Отзывы</h2>
+          <h2 class="title title--decoration">Отзывы</h2>
             <ul class="reviews__list">
               <li class="reviews__item">
                 <img class="reviews__avatar" src="" alt="">
@@ -470,7 +514,7 @@
             <input class="feedback__input" type="text" name="comment" id="comment">
             <label class="visually-hidden" for="telephone">Введите адрес электронной почты</label>
             <input class="feedback__input" type="tel" name="telephone" id="telephone">
-            <button class="feedback__button" type="submit" name="button">Отправить</button>
+            <button class="feedback__button button button--opaque" type="submit" name="button">Отправить</button>
             <p class="feedback__text">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</p>
           </form>
         </div>
@@ -484,10 +528,12 @@
           <p class="about__text">Суши МИЮШИ открылись в октябре 2012г. и уже завоевали успех у тех, кто ценит японскую кухню и качественное приготовление блюд.</p>
           <p class="about__text">С 2013 года мы осуществляем не только доставку на дом, теперь для вас открыт наш уютный небольшой зал. Придя сюда, вы сможете плотно пообедать, насладиться прекрасными напитками, посидеть с друзьями или обзавестись новыми знакомствами.</p>
           <p class="about__text">Открывая зал, Мы преследовали цель предоставить своим посетителям максимум удобства и комфорта, поэтому, придя сюда в первый раз, вы почувствуете себя как рыба в воде, окунувшись в домашнюю и теплую обстановку!</p>
-          <button class="about__button" type="button">Показать ещё</button>
-          <p class="about__text">Особое внимание мы уделяем организации доставки суши и других блюд, которая осуществляется только по г. Курске. Четкая и слаженная работа курьеров позволяет максимально сократить время от приготовления блюда до его попадания на стол заказчику. Как правило, оно составляет от 20 до 60 минут в зависимости от местонахождения клиента. Операторы службы доставки всегда осведомлены обо всех изменениях времени доставки и предупреждают клиентов заранее, а при возможных серьезных задержках в связи с дорожной ситуацией предложат Вам альтернативу. Мы беремся только за ту работу, которую можем выполнить в срок.</p>
-          <p class="about__text">В меню суши МИЮШИ представлено все многообразие японской кухни. Классические суши, и роллы приготовлены в соответствии с традиционными рецептами. Для любителей нежных и тающих во рту блюд предлагаются роллы с мясом краба, а также для больших любителей копченого угря потрясающий ролл Дракон. Для желающих пробовать что-то новое и необычное – острые ГУНКАНЫ и новинка нашего меню - ИНАРИ, широкий выбор горячих роллов. Большим компаниям будет удобно заказать суши и роллы, объединенные в сеты, включающие сразу несколько видов каждого из этих блюд. Кроме того, меню суши МИЮШИ не ограничено только японской кухней, здесь всегда можно заказать горячие и холодные блюда ЛАПША или РИС WOK с различными мясными и рыбными наполнителями, салаты, горячие закуски и различные напитки.</p>
-          <p class="about__text">Оформив у нас заказ суши на дом, клиент может выбрать удобный ему способ оплаты: наличными при получении заказа или банковской картой VISA, MasterCard при заполнении специальной формы заказа на сайте или на дому через переносной терминал (заранее сообщив оператору о форме оплаты).</p>
+          <button class="about__button button button--transparent" type="button">Показать ещё</button>
+          <div class="about__wrapper">
+            <p class="about__text">Особое внимание мы уделяем организации доставки суши и других блюд, которая осуществляется только по г. Курске. Четкая и слаженная работа курьеров позволяет максимально сократить время от приготовления блюда до его попадания на стол заказчику. Как правило, оно составляет от 20 до 60 минут в зависимости от местонахождения клиента. Операторы службы доставки всегда осведомлены обо всех изменениях времени доставки и предупреждают клиентов заранее, а при возможных серьезных задержках в связи с дорожной ситуацией предложат Вам альтернативу. Мы беремся только за ту работу, которую можем выполнить в срок.</p>
+            <p class="about__text">В меню суши МИЮШИ представлено все многообразие японской кухни. Классические суши, и роллы приготовлены в соответствии с традиционными рецептами. Для любителей нежных и тающих во рту блюд предлагаются роллы с мясом краба, а также для больших любителей копченого угря потрясающий ролл Дракон. Для желающих пробовать что-то новое и необычное – острые ГУНКАНЫ и новинка нашего меню - ИНАРИ, широкий выбор горячих роллов. Большим компаниям будет удобно заказать суши и роллы, объединенные в сеты, включающие сразу несколько видов каждого из этих блюд. Кроме того, меню суши МИЮШИ не ограничено только японской кухней, здесь всегда можно заказать горячие и холодные блюда ЛАПША или РИС WOK с различными мясными и рыбными наполнителями, салаты, горячие закуски и различные напитки.</p>
+            <p class="about__text">Оформив у нас заказ суши на дом, клиент может выбрать удобный ему способ оплаты: наличными при получении заказа или банковской картой VISA, MasterCard при заполнении специальной формы заказа на сайте или на дому через переносной терминал (заранее сообщив оператору о форме оплаты).</p>
+          </div>
         </div>
       </section>
 

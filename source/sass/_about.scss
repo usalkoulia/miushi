@@ -1,0 +1,27 @@
+.about__centering {
+  padding: 35px 15px 70px 15px;
+}
+
+.about__title {
+  margin-bottom: 40px;
+
+  &--small {
+    font-size: 20px;
+    font-weight: bold;
+    color: $third-font-color;
+    margin-bottom: 30px;
+  }
+}
+
+.about__text {
+  margin-bottom: 20px;
+  color: $secondary-font-color;
+
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+.about__wrapper {
+  display: none;
+}

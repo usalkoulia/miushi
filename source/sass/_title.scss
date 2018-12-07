@@ -2,6 +2,32 @@
   font-family: $third-font;
   color: $third-font-color;
   font-size: 44px;
+  line-height: 44px;
   text-align: center;
   font-weight: 400;
+  position: relative;
+
+  &--decoration {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/title-left@1x.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 75px;
+      height: 30px;
+      top: calc(50% - 15px);
+    }
+
+    &::before {
+      left: 10px;
+    }
+
+    &::after {
+      left: auto;
+      right: 10px;
+      transform: scale(-1, 1);
+    }
+  }
 }

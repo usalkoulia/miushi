@@ -1,0 +1,21 @@
+.button {
+  text-transform: uppercase;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  &--transparent {
+    border: 1px solid $secondary-color;
+    background: transparent;
+    color: $secondary-color;
+  }
+
+  &--opaque {
+    border: none;
+    background-color: $secondary-color;
+    color: #ffffff;
+  }
+}

@@ -2,6 +2,10 @@
   min-height: 300px;
 }
 
+.sale__list {
+  margin-bottom: 15px;
+}
+
 .sale__item {
   min-height: 240px;
   background-image: url("../img/sale-desktop@1x.jpg");
@@ -23,7 +27,7 @@
   position: relative;
   max-width: 500px;
 
-  &::after{
+  &::after {
     content: "скидка 15%";
     position: absolute;
     top: calc(50% - 20px);
@@ -31,7 +35,7 @@
     width: 67px;
     height: 67px;
     border-radius: 50%;
-    background: linear-gradient(to bottom, #de2024 0%,#b81f24 100%);
+    background: linear-gradient(to bottom, #de2024 0%, #b81f24 100%);
     font-size: 14px;
     font-weight: bold;
     color: #ffffff;
@@ -61,10 +65,23 @@
   display: none;
 }
 
+.sale__buttons {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
 .sale__button {
   width: 12px;
   height: 12px;
   border: 2px solid #c2c2c2;
-  // background-color: transparent;
-  background-color: red;
+  border-radius: 50%;
+  background-color: transparent;
+  margin: 0 10px;
+
+  &--active {
+    background-color: $primary-color;
+    border: 2px solid $primary-color;
+  }
 }
